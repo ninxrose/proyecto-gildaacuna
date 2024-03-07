@@ -1,0 +1,258 @@
+
+        .grilla {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat 11, 1fr;
+        height: 100vh;
+        }
+
+    /*header*/
+    header {
+        grid-column: 1/13;
+        grid-row: 1/4;
+        background-image: $background-image-header;
+        
+        .menu {
+            @include flex( none, center, center, 5rem);
+            @include padding (0, 0, 0, 3rem);
+
+            &-item {
+                font-size: $font-large;
+
+                &-link {
+                    color: $color-secundario;
+                    text-decoration: none;
+                    transition: all 0.4s ease;
+                }
+
+                &-link:hover {
+                    text-decoration: none;
+                    color: $color-terciario;
+                    background-color: $color-secundario;
+                    @include padding (5px, 5px, 5px, 5px);
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+    .seccionuno {
+        background-image: $background-image-header;
+        grid-column: 1/13;
+        grid-row: 4/6;
+    }
+
+    .image-container {
+        @include sizes (100%, 100%); 
+        background-image: $background-image-header;
+        @include block-center;
+        overflow: hidden;
+    }
+    
+
+    .secciondos {
+        background-image: $background-image-header;
+        grid-column: 1/13;
+        grid-row: 8/10;
+        @include padding (0, 0,0 ,0);
+    }
+
+    .menu-carta {
+        text-align: center;
+        color: $color-secundario;
+        font-family: "Bebas Neue", sans-serif;
+        @include padding (0, 100px, 0, 0);
+        font-size: $font-xl;
+    }
+
+    .parrafo-carta {
+        color: $color-secundario;
+        @include padding (100px, 20px, 100px, 50px);
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: $font-medium;
+    }
+
+    .photo-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    & img {
+        @include sizes (200px, 200px);
+        @include margin (10px, 10px, 10px, 10px);
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    }
+
+    .secciontres {
+        grid-column: 1/13;
+        grid-row: 10/13;
+        background-image: $background-image-header;
+        @include flex-center;
+        @include padding (0, 50px, 0, 50px);
+    }
+
+    .card {
+        @include sizes (200px, auto); 
+        @include inline-block;
+        @include border-radius (10px, hidden);
+        @include margin (0, 0, 20px, 0);
+        box-shadow: $box-shadow;
+        vertical-align: top;
+    }
+    .card-image {
+        @include sizes (100%, auto);
+    }
+
+    .titulo-card {
+        font-family: "Montserrat", sans-serif;
+        font-size: $font-medium;
+    }
+
+    .link-roll, .secciontres .link-roll:visited, .secciontres .link-roll:active {
+        text-decoration: none;
+        color: $color-terciario;
+    }
+    .descarga-pdf {
+        @include margin (0 ,20px ,0 ,20px);
+        text-align: center;
+
+
+    & a {
+        color: $color-secundario;
+        background-image: $background-image-header;
+        @include padding (20px, 10px,20px, 10px );
+        @include border-radius (5px, none); 
+        text-decoration: none;
+        transition: $transition;
+    }
+
+    & a:hover {
+        color: #000;
+        background-color: $background-color;
+        background-image: $background-image-header;
+    }
+    }
+
+.parrafo-card {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    }
+
+    .card-footer {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+    }
+
+    .card-footer p {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .button {
+    background-color: $background-color-transparent; 
+    color: $color-secundario;
+    border: $border;
+    @include padding (5px, 10px, 5px, 10px); 
+    @include border-radius (5px, none); 
+    cursor: pointer;
+    transition: $transition;
+
+    & :hover {
+    background-color: $background-color-white;
+    color: $color-principal;
+    }
+    }
+
+
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        html, body {
+            overflow-x: hidden !important;
+        }
+    
+        header {
+            @include flex(column, none, start, 10px);
+            @include padding(50px, 0, 0, 0);
+            font-size: $font-medium;
+    
+            ul {
+                @include flex(column, center, none, 10px);
+                @include padding(70px, 0, 0, 0);
+            }
+        }
+
+        .foto-container {
+            @include sizes(300px, auto);
+            @include flex(column, center, flex-start, none);
+        }
+
+        .card {
+            @include flex(column, center, center, 0);
+            @include margin (0, 0, 0, 10px);
+    
+            .card-container {
+                @include sizes(100px, 100px);
+            }
+        }
+    
+    
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html, body {
+            overflow-x: hidden !important;
+        }
+    
+        header {
+            @include flex(column, none, start, 10px);
+            @include padding(50px, 0, 0, 0);
+            font-size: $font-medium;
+        }
+    
+        .foto-container {
+            @include sizes(500px, auto);
+            @include flex(column, center, flex-start, none);
+        }
+    
+    
+    @media only screen and (min-width: 1246px) {
+        body {
+            overflow-x: hidden !important;
+        }
+    
+        header {
+            padding: 15px 30px;
+        }
+    
+        ul {
+            gap: 20px;
+        }
+    
+        .footer .container-footer {
+            gap: 40px;
+        }
+        
+        .footer .redes {
+            margin-top: 20px;
+        }
+        }
+        }
+    }
+    
