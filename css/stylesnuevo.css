@@ -20,7 +20,7 @@ a {
   font-size: 16px;
 }
 
-#grilla {
+.grilla {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat 11, 1fr;
@@ -30,9 +30,15 @@ a {
 /*header*/
 header {
   grid-column: 1/13;
-  grid-row: 1/4;
-  background-image: linear-gradient(90deg, #FBCBE0, #DC7776);
+  grid-row: 1/2;
+  background-image: linear-gradient(90deg,#ED3237, #851E12);
 }
+header .logo {
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+}
+
 header .menu {
   display: flex;
   flex-direction: none;
@@ -42,7 +48,7 @@ header .menu {
   padding-left: 0;
   padding-top: 0;
   padding-right: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 header .menu-item {
   font-size: 2rem;
@@ -66,47 +72,86 @@ header .menu-item-link:hover {
   cursor: pointer;
 }
 
-/*secciondos*/
-.secciondos {
-  background-image: linear-gradient(90deg, #FBCBE0, #DC7776);
+.seccionuno {
+  background-image: linear-gradient(90deg,#ED3237, #851E12);
   grid-column: 1/13;
-  grid-row: 4/5;
+  grid-row: 4/6;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #FBCBE0, #DC7776);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.secciondos {
+  background-image: linear-gradient(90deg,#ED3237, #851E12);
+  background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(4\).png') ;
+  grid-column: 1/13;
+  grid-row: 8/10;
   padding-left: 0;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
 }
-
-.fondo-arigato {
-  overflow: hidden;
+.secciondos .menu-carta {
+  text-align: center;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 100px;
+  font-size: 100px;
+}
+.secciondos .parrafo-carta {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  font-family: "Quicksand", sans-serif;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  font-size: 16px;
+}
+.secciondos .photo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.secciondos .photo-container img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.secciondos .photo-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.fondo-arigato img {
-  width: 2027px;
-  height: auto;
-  display: block;
-}
-
-/*secciontres*/
 .secciontres {
+  position: relative;
   grid-column: 1/13;
-  grid-row: 9/12;
+  grid-row: 10/11;
+  background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(1\).png') ;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0; 
 }
-.secciontres .foto-arigato {
-  overflow: hidden;
-}
-.secciontres .foto-arigato img {
-  width: 2027px;
-  height: auto;
-  display: block;
-}
+
 .secciontres .video {
   display: flex;
   flex-direction: space-between;
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  background-image: linear-gradient(90deg, #FBCBE0, #DC7776);
   padding-left: 5rem;
   padding-top: 10rem;
   padding-right: 5rem;
@@ -118,7 +163,6 @@ header .menu-item-link:hover {
   border-radius: 50px;
   overflow: hidden;
 }
-
 /*footer*/
 .footer {
   grid-column: 1/13;
@@ -127,7 +171,7 @@ header .menu-item-link:hover {
   flex-direction: space-between;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(90deg, #FBCBE0, #DC7776);
+  background-image: linear-gradient(90deg,#ED3237, #851E12);
   padding-left: 10rem;
   padding-top: 10rem;
   padding-right: 10rem;
@@ -171,36 +215,30 @@ header .menu-item-link:hover {
   margin-right: 5px;
 }
 
-/* Media queries para dispositivos móviles */
+/* Media queries para resoluciones entre 320px y 768px */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  html, body {
+
+  header {
+    width: 700px;
+    height: 200px;
     overflow-x: hidden !important;
   }
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: start;
-    gap: 10px;
-    padding-left: 50px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    font-size: 16px;
+  
+  header .logo {
+    width: 20px;
+    height: 20px;
   }
-  header ul {
+  
+  header .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: none;
-    gap: 10px;
-    padding-left: 70px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    align-items: center;
+    margin-top: 0%;
   }
-  .foto-container {
-    width: 300px;
+  
+  .secciontres .foto-container {
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -208,17 +246,21 @@ header .menu-item-link:hover {
     align-items: flex-start;
     gap: none;
   }
-  .video {
+  
+
+  .secciontres .video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
   }
-  .video .video-container {
+
+  .secciontres .video-container {
     width: 150px;
     height: 150px;
   }
+
   .redes {
     display: flex;
     flex-direction: column;
@@ -255,35 +297,14 @@ header .menu-item-link:hover {
     z-index: 1;
   }
 }
-/* Media queries para tabletas */
+
+/* Media queries para resoluciones entre 768px y 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  html, body {
+  header {
+    width: 800px;
     overflow-x: hidden !important;
   }
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: start;
-    gap: 10px;
-    padding-left: 50px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    font-size: 16px;
-  }
-  header ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: none;
-    gap: 10px;
-    padding-left: 70px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
-  .foto-container {
+  .secciontres .foto-container {
     width: 500px;
     height: auto;
     display: flex;
@@ -292,70 +313,46 @@ header .menu-item-link:hover {
     align-items: flex-start;
     gap: none;
   }
-  .video {
+
+  .secciontres .video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
   }
-  .video .video-container {
+  .secciontres .video-container {
     width: 150px;
     height: 150px;
   }
-  .redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    position: relative;
-    z-index: 1;
-  }
-  .box-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    padding-left: 30px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    position: relative;
-    z-index: 2;
-  }
-  .box-footer iframe {
-    width: 500px;
-    height: 500px;
-  }
-  .redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    position: relative;
-    z-index: 1;
-  }
 }
-/* Media queries para pantallas grandes */
-@media only screen and (min-width: 1246px) {
-  body {
+
+/* Media queries para resoluciones entre 1024px y 1246px */
+@media only screen and (min-width: 1024px) and (max-width: 1246px) {
+
+  .secciontres body {
     overflow-x: hidden !important;
   }
-  header {
+  .secciontres header {
     padding: 15px 30px;
   }
-  ul {
+  .secciontres ul {
     gap: 20px;
   }
-  .footer .container-footer {
-    gap: 40px;
+
+  .secciontres .video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
   }
-  .footer .redes {
-    margin-top: 20px;
+  .secciontres .video-container {
+    width: 200px;
+    height: 200px;
   }
 }
+
 
 /*# sourceMappingURL=stylesnuevo.css.map */
