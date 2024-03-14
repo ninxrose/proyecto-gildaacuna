@@ -1,127 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- El tipo de simbolos que podemos utilizar -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala o diseño responsive -->
-    <title>Arigato</title>  <!-- La que le da el nombre a la web en la pestaña -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIKO SUSHI</title>
     <link rel="icon" href="img/Black White Modern Luxury Logo.png" type="image/png"> 
-    <link rel="stylesheet" href="./css/styleslocales.css">
+    <link rel="stylesheet" href="./css/styleslocalesnuevo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Roboto:wght@100&family=Quicksand:wght@300..700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-
-<body> <!-- Todo lo que pongamos dentro del body es lo que verá el usuario -->
-
-    <!-- Inicio de mi header -->
-
-    <div id="grilla">
-        
-        <header>
-            <div class="container">
-                <img id="Logo" src="./img/Logo Florista Circular Blanco Negro (3).png" alt="Logo">
-            </div> 
-
-            <ul>
-                <li><a class="menu-item" href="./index.html">Inicio</a></li>
-                <li><a class="menu-item" href="./productos.html">Carta</a></li>
-                <li><a class="menu-item" href="./pages/locales.html">Locales</a></li>
-                <li><a class="menu-item" href="./contacto.html">Contacto</a></li>
+<body>
+    <div class="grilla">
+        <header class="navegacion">
+            <img class="Logo" src="./img/logo maiko.png" alt="Logo">
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-item-link" href="index.html">Inicio</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="productos.html">Carta</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="locales.html">Locales</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="contacto.html">Contacto</a></li>
             </ul>
-            
-    
         </header>
-    
-    <section id="secciontres">
-        <div class="seccion-dos">
-            <img class="foto-container" src="./img/arigato fondo 2.png" alt="Arigato-fondo">
-        </div>
 
-        <h1 class="menu-carta">Locales</h1>
-        <p class="parrafo-carta">
-            En arigato tenemos diversas sucursales donde puedes ir a vivir esta mágina experiencia, todo dentro del extenso territorio chileno. <br>
-            Comenzando desde la <strong>Zona Norte</strong> con las sucursales de <strong>Iquique y La Serena</strong>, en la <strong>Zona Centro</strong> encontrando nuestras sucursales de 
-            <strong>Santiago, Viña del Mar y Concón</strong> y finalmente en la <strong>Zona Sur</strong> la sucursal de <strong>Puerto Montt</strong>.
-        </p>
-    
-        <div class="foto-container">
-            <div class="foto-grid">
-                <img class="foto-menu" src="./img/concon.png" alt="concón">
-                <img class="foto-menu" src="./img/viña del mar.png" alt="viña del mar">
-                <img class="foto-menu" src="./img/stgo.png" alt="santiago">
-                <img class="foto-menu" src="./img/la serena.png" alt="la serena">
-                <img class="foto-menu" src="./img/puerto montt.png" alt="puerto montt">
-                <img class="foto-menu" src="./img/iquique.png" alt="iquique">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-
-        <section class="container-footer">
-        <div class="box-footer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.319746641787!2d-71.54228208539445!3d-33.01963253323535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce7de71b9575%3A0x66ad92a4f84b1a34!2sCosta%20de%20Montemar!5e0!3m2!1sen!2scl!4v1644350679739!5m2!1sen!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    
-        <div class="redes">
-            <a class="ubicacion" href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-                Costa de Montemar
-            </a>
-        </div>
-
-        <div class="redes">
-            <a class="Mail" href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                </svg> <a href="rosiesdesigns.web@gmail.com">rosiesdesigns.web@gmail.com</a>
-            </a>
-        </div>
-        
-        <div class="redes">
-            <a class="Telefono" href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                    <path d="M15 7a2 2 0 0 1 2 2" />
-                    <path d="M15 3a6 6 0 0 1 6 6" />
-                </svg>
-                (+56) 9 22553366
-            </a>
-        </div>
-
-        <div class="redes">
-            <a class="Reloj" href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-24" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 12a9 9 0 0 0 5.998 8.485m12.002 -8.485a9 9 0 1 0 -18 0" />
-                    <path d="M12 7v5" />
-                    <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-                    <path d="M18 15v2a1 1 0 0 0 1 1h1" />
-                    <path d="M21 15v6" />
-                </svg>
-                Martes a Domingo de 17:00 hrs hrs a 00:00 hrs
-            </a>
-        </div>
-    </section>
-
-            
-        <section class="copyright-footer">
-            <p id="text-footer">
-                © ninx.rose (rosie's web design)
-            </p>
-            <img class="image-footer" src="./img/logo footer.png" alt="logo-footer">
-
+        <section class="seccionuno">
+            <img class="image-container" src="img/ARIGATO (Facebook Cover).png" alt="productos">
         </section>
-    </footer>
 
-</body> 
+        <section class="secciondos">
+            <h1 class="menu-carta">LOCALES</h1>
+            <p class="parrafo-carta">
+                En arigato tenemos diversas sucursales donde puedes ir a vivir esta mágina experiencia, todo dentro del extenso territorio chileno. <br>
+                Comenzando desde la <strong>Zona Norte</strong> con las sucursales de <strong>Iquique y La Serena</strong>, en la <strong>Zona Centro</strong> encontrando nuestras sucursales de 
+                <strong>Santiago, Viña del Mar y Concón</strong> y finalmente en la <strong>Zona Sur</strong> la sucursal de <strong>Puerto Montt</strong>.
+            </p>
+
+            <div class="photo-container">
+                <div class="photo-container">
+                    <div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in"> Concón - Avenida Concón Reñaca </p>
+                        <img class="foto-menu" src="./img/concon.png" alt="concón">
+                    </div>
+                    <div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in"> Viña del mar - 14 norte, Mall Boulevard</p>
+                        <img class="foto-menu" src="./img/viña del mar.png" alt="viña del mar">
+                    </div>
+
+                    <div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in"> Santiago - Providencia, Estación Ines de Suarez</p>
+                        <img class="foto-menu" data-aos="zoom-in" src="./img/stgo.png" alt="viña del mar">
+                    </div>
+
+                    <<div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in">La Serena - C/Juan de Dios #508 </p>
+                        <img class="foto-menu" data-aos="zoom-in" src="./img/la serena.png" alt="viña del mar">
+                    </div>
+                    
+                    <div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in">Puerto Montt - Rengifo #952</p>
+                        <img class="foto-menu" data-aos="zoom-in" src="./img/puerto montt.png" alt="viña del mar">
+                    </div>
+                    
+                    <div class="photo-item" data-aos="zoom-in">
+                        <p data-aos="zoom-in">Iquique - Arturo Pratt #3082</p>
+                        <img class="foto-menu" data-aos="zoom-in" src="./img/iquique.png" alt="viña del mar">
+                    </div>
+                    
+        </section>
+    
+        <footer class="footer">
+            <section class="container-footer" data-aos="zoom-in">
+                <div class="box-footer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.319746641787!2d-71.54228208539445!3d-33.01963253323535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce7de71b9575%3A0x66ad92a4f84b1a34!2sCosta%20de%20Montemar!5e0!3m2!1sen!2scl!4v1644350679739!5m2!1sen!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        
+            <section class="container-footer redes" >
+                <a class="ubicacion" data-aos="zoom-in" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    Avenida Costa de Montemar 
+                </a>
+        
+                <a class="redes" data-aos="zoom-in" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                    </svg> <a class="redes" data-aos="zoom-in" href="rosiesdesigns.web@gmail.com">rosiesdesigns.web@gmail.com</a>
+                </a>
+        
+                <a class="redes" data-aos="zoom-in" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                    </svg>
+                    (+56) 9 22553366
+                </a>
+        
+                <a class="redes" data-aos="zoom-in" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-24" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 12a9 9 0 0 0 5.998 8.485m12.002 -8.485a9 9 0 1 0 -18 0" />
+                            <path d="M12 7v5" />
+                            <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+                            <path d="M18 15v2a1 1 0 0 0 1 1h1" />
+                            <path d="M21 15v6" />
+                        </svg>
+                        Martes a Domingo de 17:00 hrs hrs a 00:00 hrs
+                </a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+<script>
+    AOS.init();
+</script>
+
 </html>
-
