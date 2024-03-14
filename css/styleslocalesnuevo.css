@@ -91,7 +91,7 @@
   .secciondos {
     background-image: linear-gradient(90deg,#ED3237, #851E12);
     background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(5\).png') ;
-    background-size: 1550px;
+    background-size: 1550px; 
     grid-column: 1/13;
     grid-row: 8/10;
     padding-left: 0;
@@ -121,6 +121,8 @@
   .secciondos .photo-item p{
   color: #fff;
   font-size: 15px;
+  padding-left: 50px;
+  text-shadow: 1px 1px #000;
   }
 
   .secciondos .photo-container {
@@ -129,10 +131,10 @@
     flex-wrap: wrap;
   }
   .secciondos .photo-container img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 20px;
     transition: transform 0.3s ease;
   }
   .secciondos .photo-container img:hover {
