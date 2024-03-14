@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala o diseño responsive -->
     <title>Arigato - Productos</title>  <!-- La que le da el nombre a la web en la pestaña -->
     <link rel="icon" href="img/Black White Modern Luxury Logo.png" type="image/png"> 
-    <link rel="stylesheet" href="./css/stylescarta.css">
+    <link rel="stylesheet" href="./css/stylescartanuevo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body> <!-- Todo lo que pongamos dentro del body es lo que verá el usuario -->
@@ -17,32 +19,29 @@
     <!-- Inicio de mi header -->
 
 
-    <div id="grilla">
+    <div class="grilla">
         
-        <header>
+        <header class="navegacion">
+            <img class="Logo" data-aos="zoom-in" src="./img/logo maiko.png" alt="Logo">
 
-            <div class="container">
-                <img id="Logo" src="./img/Logo Florista Circular Blanco Negro (3).png" alt="Logo">
-            </div> 
-            <ul>
-                <li><a class="menu-item" href="./index.html">Inicio</a></li>
-                <li><a class="menu-item" href="./productos.html">Carta</a></li>
-                <li><a class="menu-item" href="./locales.html">Locales</a></li>
-                <li><a class="menu-item" href="./contacto.html">Contacto</a></li>
+            <ul class="menu" data-aos="zoom-in">
+                <li class="menu-item"><a class="menu-item-link" href="index.html">Inicio</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="productos.html">Carta</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="locales.html">Locales</a></li>
+                <li class="menu-item"><a class="menu-item-link" href="contacto.html">Contacto</a></li>
             </ul>
-            
     
         </header>
     
-        <section id="seccionuno">
-            <img id="image-container" src="img/arigato fondo 1.png" alt="productos">
+        <section class="seccionuno">
+            <img class="image-container" src="img/ARIGATO (Facebook Cover).png" alt="productos">
         </section>
         
-        <section id="secciondos">
-                <h1 class="menu-carta">Ingredientes</h1>
-                <p class="parrafo-carta">
+        <section class="secciondos">
+                <h1 class="menu-carta" data-aos="zoom-in">Ingredientes</h1>
+                <p class="parrafo-carta" data-aos="zoom-in">
                 Camarón, Salmón, champiñon, Atún, Pollo, Pulpo, Calamar, Kanikama, Palmitos, Entre otros. </p>
-                <div class="photo-container">
+                <div class="photo-container" data-aos="zoom-in">
                 <img class="foto-menu" src="./img/menu camaron.png" alt="camarón">
                 <img class="foto-menu" src="./img/menu champiñon.png" alt="champiñon">
                 <img class="foto-menu" src="./img/menu salmon.png" alt="salmon">
@@ -59,8 +58,7 @@
         
         <section class="secciontres">
             <div class="card-container">
-                <div class="card">
-                    <div class="card-header"></div>
+                <div class="card" data-aos="zoom-in">
                     <img class="card-image" src="./img/Empanaditas-queso-camaron.jpg" alt="productos">
                     <div class="card-footer">
                         <div class="descarga-pdf">
@@ -70,19 +68,18 @@
                     </div>
                 </div>
                 
-                <div class="card">
-                    <div class="card-header"></div>
-                    <img class="card-image" src="./img/How to Make a Dragon Roll.jpg" alt="productos">
-                    <div class="card-footer">
-                        <div class="descarga-pdf">
-                            <a href="./Rolls.html" target="_blank">Rolls</a>
+                <div class="card" data-aos="zoom-in">
+                        <img class="card-image" src="./img/How to Make a Dragon Roll.jpg" alt="productos">
+                        <div class="card-footer">
+                            <div class="descarga-pdf">
+                                <a href="./Rolls.html" target="_blank">Rolls</a>
+                            </div>
+                            <p class="parrafo-card">Experimenta la fusión perfecta: sabores frescos, texturas crujientes y suaves, envueltos en rolls de sushi artesanales. <br> Una experiencia incomparable. </p>
                         </div>
-                        <p class="parrafo-card">Experimenta la fusión perfecta: sabores frescos, texturas crujientes y suaves, envueltos en rolls de sushi artesanales. <br> Una experiencia incomparable. </p>
                     </div>
-                </div>
+
         
-                <div class="card">
-                    <div class="card-header"></div>
+                <div class="card" data-aos="zoom-in">
                     <img class="card-image" src="./img/descargar (8).jpeg" alt="productos">
                     <div class="card-footer">
                         <div class="descarga-pdf">
@@ -92,8 +89,7 @@
                     </div>
                 </div>
         
-                <div class="card">
-                    <div class="card-header"></div>
+                <div class="card" data-aos="zoom-in">
                     <img class="card-image" src="./img/Nigiris.jpg" alt="productos">
                     <div class="card-footer">
                         <div class="descarga-pdf">
@@ -103,8 +99,7 @@
                     </div>
                 </div>
         
-                <div class="card">
-                    <div class="card-header"></div>
+                <div class="card" data-aos="zoom-in">
                     <img class="card-image" src="./img/bebidas.png" alt="productos">
                     <div class="card-footer">
                         <div class="descarga-pdf">
@@ -114,8 +109,7 @@
                     </div>
                 </div>
         
-                <div class="card">
-                    <div class="card-header"></div>
+                <div class="card" data-aos="zoom-in">
                     <img class="card-image" src="./img/postres.jpg" alt="productos">
                     <div class="card-footer">
                         <div class="descarga-pdf">
@@ -127,4 +121,7 @@
             </div>
         </section>
 </body> 
+<script>
+    AOS.init();
+</script>
 </html>
