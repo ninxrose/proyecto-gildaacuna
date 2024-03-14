@@ -1,0 +1,57 @@
+
+//solo si quiero centrar un elemento//
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin block-center {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    }
+
+@mixin sizes ($width, $height) {
+width: $width;
+height: $height; 
+}
+
+@mixin padding ($padding-left, $padding-top, $padding-right, $padding-bottom){
+padding-left: $padding-left;
+padding-top: $padding-top;
+padding-right: $padding-right;
+padding-bottom: $padding-bottom;
+}
+
+@mixin margin ($margin-left, $margin-top, $margin-rigth, $margin-bottom){
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+    margin-right: $margin-rigth;
+    margin-bottom: $margin-bottom;
+}
+
+
+@mixin inline-block{
+    display: inline-block;
+}
+
+@mixin border-radius ($border-radius, $overflow){
+    border-radius: $border-radius;
+    overflow: $overflow;
+}

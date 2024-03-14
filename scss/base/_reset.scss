@@ -1,0 +1,29 @@
+
+// Definición del color secundario
+$color-principal: #000;
+
+// Tamaño de fuente medium
+$font-medium: 16px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none ;
+    color: $color-principal;
+    font-size: $font-medium;
+}
+
+
