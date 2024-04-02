@@ -90,7 +90,6 @@ header .menu-item-link:hover {
 
 .secciondos {
   background-image: linear-gradient(90deg,#ED3237, #851E12);
-  background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(4\).png') ;
   grid-column: 1/13;
   grid-row: 8/10;
   padding-left: 0;
