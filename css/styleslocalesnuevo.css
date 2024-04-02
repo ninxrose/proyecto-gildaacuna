@@ -90,7 +90,6 @@
 
   .secciondos {
     background-image: linear-gradient(90deg,#ED3237, #851E12);
-    background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(5\).png') ;
     background-size: 1550px; 
     grid-column: 1/13;
     grid-row: 8/10;
@@ -100,6 +99,7 @@
     padding-bottom: 0;
   }
   .secciondos .menu-carta {
+    background-image: linear-gradient(90deg,#ED3237, #851E12);
     text-align: center;
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
@@ -107,6 +107,7 @@
     font-size: 100px;
   }
   .secciondos .parrafo-carta {
+    background-image: linear-gradient(90deg,#ED3237, #851E12);
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -126,6 +127,7 @@
   }
 
   .secciondos .photo-container {
+    background-image: linear-gradient(90deg,#ED3237, #851E12);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

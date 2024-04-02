@@ -135,7 +135,7 @@ header .menu-item-link:hover {
   position: relative;
   grid-column: 1/13;
   grid-row: 10/11;
-  background-image: url('/img/ARIGATO\ \(Facebook\ Cover\)\ \(2\).png'); 
+  background-image: linear-gradient(90deg,#ED3237, #851E12);
   background-size: cover; 
   background-position: center;
   display: flex;
